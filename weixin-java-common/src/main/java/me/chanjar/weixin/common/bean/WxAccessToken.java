@@ -3,6 +3,7 @@ package me.chanjar.weixin.common.bean;
 import java.io.Serializable;
 
 import lombok.Data;
+import lombok.ToString;
 import me.chanjar.weixin.common.util.json.WxGsonBuilder;
 
 /**
