@@ -247,12 +247,13 @@
 
   <repositories>
     <repository>
-      <id>androidape-repository</id>
-      <name>androidape Repository</name>
-      <url>http://47.105.163.148:8081/nexus/content/groups/public/</url>
+      <id>rdc-releases</id>
+      <url>https://repo.rdc.aliyun.com/repository/105695-release-HjRLzY/</url>
       <releases>
+        <enabled>true</enabled>
       </releases>
       <snapshots>
+        <enabled>false</enabled>
       </snapshots>
     </repository>
     <repository>
@@ -263,73 +264,26 @@
         <enabled>false</enabled>
       </snapshots>
     </repository>
-    <repository>
-      <id>sonatype-nexus</id>
-      <name>Sonatype Nexus</name>
-      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-      <snapshots>
-      </snapshots>
-    </repository>
-    <repository>
-      <id>spring-snapshots</id>
-      <name>Spring Snapshots</name>
-      <url>https://repo.spring.io/snapshot</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-    <repository>
-      <id>spring-releases</id>
-      <name>Spring Releases</name>
-      <url>https://repo.spring.io/release</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
   </repositories>
 
   <distributionManagement>
     <repository>
-      <id>releases</id>
-      <name>nexus releases</name>
-      <url>http://47.105.163.148:8081/nexus/content/repositories/releases/</url>
+      <id>rdc-releases</id>
+      <url>https://repo.rdc.aliyun.com/repository/105695-release-HjRLzY/</url>
     </repository>
     <snapshotRepository>
-      <id>snapshots</id>
-      <name>nexus snapshots</name>
-      <url>http://47.105.163.148:8081/nexus/content/repositories/snapshots/</url>
+      <id>rdc-snapshots</id>
+      <url>https://repo.rdc.aliyun.com/repository/105695-snapshot-KJ3zui/</url>
     </snapshotRepository>
   </distributionManagement>
+
   <pluginRepositories>
     <pluginRepository>
-      <id>androidape-repository</id>
-      <name>androidape Repository</name>
-      <url>http://47.105.163.148:8081/nexus/content/groups/public/</url>
+      <id>rdc-releases</id>
+      <url>https://repo.rdc.aliyun.com/repository/105695-release-HjRLzY/</url>
       <releases>
-      </releases>
-      <snapshots>
-      </snapshots>
-    </pluginRepository>
-    <pluginRepository>
-      <id>spring-snapshots</id>
-      <name>Spring Snapshots</name>
-      <url>https://repo.spring.io/snapshot</url>
-      <snapshots>
         <enabled>true</enabled>
-      </snapshots>
-    </pluginRepository>
-    <pluginRepository>
-      <id>spring-milestones</id>
-      <name>Spring Milestones</name>
-      <url>https://repo.spring.io/milestone</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </pluginRepository>
-    <pluginRepository>
-      <id>spring-releases</id>
-      <name>Spring Releases</name>
-      <url>https://repo.spring.io/release</url>
+      </releases>
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
